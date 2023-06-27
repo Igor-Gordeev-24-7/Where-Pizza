@@ -8,6 +8,7 @@ $color-white: rgb(249, 249, 249);
 $color-white-border: rgb(240, 240, 240);
 $color-dark: rgb(25, 25, 25);
 $color-orange: rgb(255, 112, 16);
+$color-red: rgb(226, 53, 53);
 
 // BODY
 
@@ -269,4 +270,31 @@ body {
   line-height: 24px;
   letter-spacing: 0px;
   text-align: center;
+}
+
+// stock
+
+.stock {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 343px);
+  grid-template-rows: 300px;
+  justify-content: space-between;
+}
+
+.stock__card {
+  position: relative;
+  background: $color-orange;
+  border-radius: 12px;
+  background-color: $color-orange;
+}
+
+.stock__card:nth-child(even) {
+  background-color: $color-red;
+}
+
+.stock__card-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
