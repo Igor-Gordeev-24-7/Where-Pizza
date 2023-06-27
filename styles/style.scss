@@ -217,3 +217,56 @@ body {
 
 .basket-btn__price {
 }
+
+// MAIN
+
+.main {
+}
+
+// FILTERS
+
+.filters {
+}
+
+.main__filters {
+}
+
+.wrapper {
+}
+
+.header__wrapper {
+}
+
+.filters__cards {
+  margin-top: 30px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(8, 135px);
+  grid-template-rows: 104px;
+  justify-content: space-between;
+}
+
+.filters__card {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $color-light-white;
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 10px;
+}
+
+.filters__card-img {
+}
+
+.filters__card-text {
+  color: $color-dark;
+  font-family: $font-inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+}
