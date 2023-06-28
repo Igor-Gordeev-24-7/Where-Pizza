@@ -319,3 +319,74 @@ body {
   letter-spacing: 0px;
   text-align: left;
 }
+
+// filters__check-address
+
+.filters__check-address {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.check-address__wrapper {
+}
+
+.check-address__fieldset {
+  padding: 16px 32px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 80px;
+  background-color: $color-light-white;
+  border-radius: 8px;
+}
+
+.check-address__text {
+  margin-right: 32px;
+  color: $color-dark;
+  font-family: $font-inter;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.check-address__input-box {
+  margin-right: 20px;
+  width: 783px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 6px;
+}
+
+.check-address__input-box-img {
+  margin-left: 12px;
+}
+
+.check-address__input {
+  margin-left: 8px;
+  width: 90%;
+  color: rgb(165, 165, 165);
+  font-family: $font-inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.check-address__btn {
+  padding: 12px 32px;
+  background: $color-orange;
+  border-radius: 6px;
+  color: rgb(255, 255, 255);
+  font-family: $font-inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+}
