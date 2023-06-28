@@ -403,8 +403,15 @@ body {
   align-items: start;
 }
 
-.foods__pizza {
+.foods__conteiner {
   width: 100%;
+}
+
+.foods__conteiner--pizza {
+}
+
+.foods__conteiner--sushi {
+  margin-top: 46px;
 }
 
 .foods__header {
@@ -561,7 +568,10 @@ body {
   text-align: center;
 }
 
-.food-list__card-price {
+.food-list__card-price-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   color: $color-orange;
   font-family: $font-inter;
   font-size: 18px;
@@ -569,4 +579,7 @@ body {
   line-height: 24px;
   letter-spacing: 0px;
   text-align: right;
+}
+
+.food-list__card-price {
 }

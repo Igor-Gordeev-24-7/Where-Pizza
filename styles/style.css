@@ -322,8 +322,12 @@ body {
   align-items: start;
 }
 
-.foods__pizza {
+.foods__conteiner {
   width: 100%;
+}
+
+.foods__conteiner--sushi {
+  margin-top: 46px;
 }
 
 .foods__header {
@@ -472,7 +476,10 @@ body {
   text-align: center;
 }
 
-.food-list__card-price {
+.food-list__card-price-box {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   color: rgb(255, 112, 16);
   font-family: "Inter";
   font-size: 18px;
