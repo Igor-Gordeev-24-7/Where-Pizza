@@ -390,3 +390,183 @@ body {
   letter-spacing: 0px;
   text-align: left;
 }
+
+// FOODS
+
+.foods {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.foods__wrapper {
+  flex-direction: column;
+  align-items: start;
+}
+
+.foods__pizza {
+  width: 100%;
+}
+
+.foods__header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.foods__header-heading {
+  color: $color-dark;
+  font-family: $font-inter;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.foods__header-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 16px;
+  background: $color-light-white;
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 6px;
+}
+
+.foods__header-btn-img {
+}
+
+.foods__header-btn-span {
+  color: $color-dark;
+  font-family: $font-inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+// foods__list
+
+.foods__list {
+  width: 100%;
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(4, 300px);
+  grid-template-rows: 480px;
+  justify-content: space-between;
+  row-gap: 30px;
+}
+
+.food-list__card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  border-radius: 12px;
+  background: $color-light-white;
+}
+
+.food-list__card--new::after {
+  content: "NEW";
+  position: absolute;
+  width: 65px;
+  height: 32px;
+  top: 20px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-red;
+  border-radius: 0px 5px 5px 0px;
+  color: $color-light-white;
+  font-family: $font-inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.food-list__card--hit::after {
+  content: "ХИТ";
+  position: absolute;
+  width: 65px;
+  height: 32px;
+  top: 20px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $color-red;
+  border-radius: 0px 5px 5px 0px;
+  color: $color-light-white;
+  font-family: $font-inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.food-list__card-img {
+}
+
+.food-list__card-box {
+  padding: 16px 20px;
+  border-top: 1px solid $color-white-border;
+}
+
+.food-list__card-name {
+  color: $color-dark;
+  font-family: $font-inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.food-list__card-description {
+  max-width: 260px;
+  margin-top: 12px;
+  color: $color-dark;
+  font-family: $font-inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.food-list__card-btn-box {
+  margin-top: 16px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.food-list__card-btn {
+  padding: 13px 32px;
+  background: $color-orange;
+  border-radius: 6px;
+  color: $color-light-white;
+  font-family: $font-inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.food-list__card-price {
+  color: $color-orange;
+  font-family: $font-inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: right;
+}
