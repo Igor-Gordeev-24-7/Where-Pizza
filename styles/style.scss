@@ -414,6 +414,10 @@ body {
   margin-top: 46px;
 }
 
+.foods__conteiner--snacks {
+  margin-top: 46px;
+}
+
 .foods__header {
   width: 100%;
   display: flex;
@@ -461,7 +465,7 @@ body {
   margin-top: 32px;
   display: grid;
   grid-template-columns: repeat(4, 300px);
-  grid-template-rows: 480px;
+  grid-template-rows: repeat(2, 480px);
   justify-content: space-between;
   row-gap: 30px;
 }
@@ -518,11 +522,17 @@ body {
 }
 
 .food-list__card-img {
+  border-bottom: 1px solid $color-white-border;
 }
 
 .food-list__card-box {
+  width: 100%;
+  height: 100%;
   padding: 16px 20px;
-  border-top: 1px solid $color-white-border;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
 }
 
 .food-list__card-name {
@@ -537,7 +547,7 @@ body {
 
 .food-list__card-description {
   max-width: 260px;
-  margin-top: 12px;
+  height: 44px;
   color: $color-dark;
   font-family: $font-inter;
   font-size: 16px;
@@ -548,7 +558,6 @@ body {
 }
 
 .food-list__card-btn-box {
-  margin-top: 16px;
   width: 100%;
   display: flex;
   align-items: center;
