@@ -405,7 +405,7 @@ body {
   margin-top: 32px;
   display: grid;
   grid-template-columns: repeat(4, 300px);
-  grid-template-rows: repeat(minmax(424px, 480px));
+  grid-template-rows: minmax(424px, 480px);
   justify-content: space-between;
   row-gap: 30px;
 }
@@ -481,8 +481,7 @@ body {
 }
 
 .food-list__card-name {
-  max-height: 48px;
-  height: 100%;
+  height: 48px;
   color: rgb(25, 25, 25);
   font-family: "Inter";
   font-size: 18px;
@@ -496,6 +495,7 @@ body {
   margin-bottom: auto;
   width: 100%;
   max-width: 260px;
+  height: 44px;
   color: rgb(25, 25, 25);
   font-family: "Inter";
   font-size: 16px;
