@@ -9,6 +9,7 @@ $color-white-border: rgb(240, 240, 240);
 $color-dark: rgb(25, 25, 25);
 $color-orange: rgb(255, 112, 16);
 $color-red: rgb(226, 53, 53);
+$color-grey: rgb(165, 165, 165);
 
 // BODY
 
@@ -334,11 +335,19 @@ body {
 
 .filters__check-address {
   margin-top: 30px;
+  width: 100%;
   display: flex;
   align-items: center;
 }
 
 .check-address__wrapper {
+}
+
+.check-address__form {
+  width: 100%;
+  background-color: $color-light-white;
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 8px;
 }
 
 .check-address__fieldset {
@@ -347,7 +356,6 @@ body {
   display: flex;
   align-items: center;
   height: 80px;
-  background-color: $color-light-white;
   border-radius: 8px;
 }
 
@@ -356,37 +364,40 @@ body {
   color: $color-dark;
   font-family: $font-inter;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 500;
   line-height: 24px;
   letter-spacing: 0px;
   text-align: left;
 }
 
 .check-address__input-box {
-  margin-right: 20px;
+  margin-right: auto;
   width: 100%;
-  max-width: 783px;
+  max-width: 775px;
   height: 48px;
   display: flex;
   align-items: center;
+  background: url(../assets/icon/icon-map-point.svg);
+  background-repeat: no-repeat;
+  background-size: 13px 20px;
+  background-position: top 50% left 15.5px;
   border: 1px solid rgb(240, 240, 240);
   border-radius: 6px;
 }
 
-.check-address__input-box-img {
-  margin-left: 12px;
-}
-
 .check-address__input {
-  margin-left: 8px;
+  margin-left: 40px;
   width: 90%;
-  color: rgb(165, 165, 165);
+  color: $color-grey;
   font-family: $font-inter;
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
-  letter-spacing: 0px;
   text-align: left;
+}
+
+.check-address__input:focus {
+  color: $color-dark;
 }
 
 .check-address__btn {

@@ -217,30 +217,31 @@
 
             <!-- filters__check-address -->
 
-            <form action="" class="filters__check-address">
+            <div class="filters__check-address">
 
                 <div class="wrapper check-address__wrapper">
 
-                    <fieldset class="check-address__fieldset">
+                    <form action="" class="check-address__form">
 
-                        <label class="check-address__text">Проверить адрес доставки</label>
+                        <fieldset class="check-address__fieldset">
 
-                        <div class="check-address__input-box">
+                            <label for="check-address" class="check-address__text">Проверить адрес доставки</label>
 
-                            <img src="./assets/icon/icon-map-point.svg" alt="icon-map-point"
-                                class="check-address__input-box-img">
+                            <div class="check-address__input-box">
 
-                            <input placeholder="Адрес" type="text" class="check-address__input">
+                                <input id="check-address" placeholder="Адрес" type="text" class="check-address__input">
 
-                        </div>
+                            </div>
 
-                        <button class="check-address__btn">Проверить</button>
+                            <button class="check-address__btn">Проверить</button>
 
-                    </fieldset>
+                        </fieldset>
+
+                    </form>
 
                 </div>
 
-            </form>
+            </div>
 
         </section>
 
