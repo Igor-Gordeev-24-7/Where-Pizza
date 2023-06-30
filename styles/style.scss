@@ -256,18 +256,17 @@ body {
 }
 
 .filters__card {
+  cursor: pointer;
   padding-top: 20px;
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  gap: 8px;
   background-color: $color-light-white;
   border: 1px solid rgb(240, 240, 240);
   border-radius: 10px;
-}
-
-.filters__card-img {
 }
 
 .filters__card-text {
