@@ -177,13 +177,15 @@ body {
 }
 
 .header__logo-link {
+  height: 32px;
   display: flex;
   align-items: center;
   gap: 12px;
+  padding-left: 44px;
   margin-right: auto;
-}
-
-.header__logo-img {
+  background: url(../assets/icon/icon-logo-pizza.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .header__logo-text {
