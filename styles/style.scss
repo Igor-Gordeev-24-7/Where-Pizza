@@ -53,13 +53,18 @@ body {
 .header__logo-map-img {
 }
 
-.header__location-btn {
+.header__location {
+  height: 20px;
+  padding-left: 28px;
   display: flex;
   align-items: center;
   gap: 8px;
+  background: url(../assets/icon/icon-map-point.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-.location-btn__span {
+.location__span {
   color: $color-dark;
   font-family: $font-inter;
   font-size: 14px;
@@ -69,7 +74,7 @@ body {
   text-align: right;
 }
 
-.location-btn__img {
+.location__img {
 }
 
 .header__address-verification {
