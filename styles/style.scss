@@ -485,7 +485,7 @@ body {
   margin-top: 32px;
   display: grid;
   grid-template-columns: repeat(4, 300px);
-  grid-template-rows: repeat(2, 480px);
+  grid-template-rows: repeat(minmax(424px, 480px));
   justify-content: space-between;
   row-gap: 30px;
 }
@@ -584,6 +584,7 @@ body {
 }
 
 .food-list__card-btn-box {
+  margin-top: 16px;
   width: 100%;
   display: flex;
   align-items: center;
