@@ -196,12 +196,15 @@ body {
 }
 
 .header__basket-btn {
-  padding: 8px 16px;
   display: flex;
   align-items: center;
-  background: $color-orange;
-  border-radius: 4px;
   gap: 8px;
+  padding: 9px 16px 9px 48px;
+  background: url(../assets/icon/icon-shopping-bag.svg), $color-orange;
+  background-repeat: no-repeat;
+  background-size: 24px 21px;
+  background-position: top 9.5px left 16px;
+  border-radius: 4px;
 }
 
 .basket-btn__img {
