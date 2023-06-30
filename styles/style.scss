@@ -542,6 +542,10 @@ body {
 }
 
 .food-list__card-img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
   border-bottom: 1px solid $color-white-border;
 }
 
