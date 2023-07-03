@@ -371,6 +371,10 @@ body {
   margin-top: 46px;
 }
 
+.foods__conteiner--sauces {
+  margin-top: 46px;
+}
+
 .foods__header {
   width: 100%;
   display: flex;
