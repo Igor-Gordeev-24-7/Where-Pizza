@@ -461,7 +461,7 @@ body {
   justify-content: space-between;
 }
 
-.foods__conteiner-subheading {
+.subheading {
   color: $color-dark;
   font-family: $font-inter;
   font-size: 40px;
@@ -472,6 +472,16 @@ body {
 }
 
 .foods__conteiner-subheading--pizza {
+}
+.foods__conteiner-subheading--sushi {
+}
+.foods__conteiner-subheading--snacks {
+}
+.foods__conteiner-subheading--dessert {
+}
+.foods__conteiner-subheading--beverages {
+}
+.foods__conteiner-subheading--combo {
 }
 
 .foods__header-btn {
