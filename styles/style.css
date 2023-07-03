@@ -386,7 +386,7 @@ body {
   justify-content: space-between;
 }
 
-.foods__header-heading {
+.foods__conteiner-subheading {
   color: rgb(25, 25, 25);
   font-family: "Inter";
   font-size: 40px;
