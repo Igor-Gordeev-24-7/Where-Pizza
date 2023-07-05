@@ -610,4 +610,103 @@ body {
   line-height: 20px;
   letter-spacing: 0px;
   text-align: left;
+}
+
+.footer {
+  width: 100%;
+  height: 100%;
+  margin-top: 60px;
+  padding: 32px 0px 32px 0px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(240, 240, 240);
+}
+
+.footer__wrapper {
+  height: 100%;
+  width: 100%;
+  align-items: start;
+}
+
+.footer__column-about {
+  height: 100%;
+  width: 100%;
+  max-width: 265px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.footer__column-logo-link {
+  height: 40px;
+  padding-left: 55px;
+  display: flex;
+  align-items: center;
+  background: url(../assets/icon/icon-logo-pizza.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+}
+
+.footer__column-logo-text {
+  color: rgb(25, 25, 25);
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.footer__copyright {
+  color: rgb(25, 25, 25);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.footer__columns {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: start;
+}
+
+.footer__column {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 22px;
+}
+
+.footer__column-heading {
+  color: rgb(25, 25, 25);
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.footer__column-links {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+.footer__column-link {
+  color: rgb(25, 25, 25);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
 }/*# sourceMappingURL=style.css.map */
