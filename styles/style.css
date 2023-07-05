@@ -121,6 +121,11 @@ body {
 }
 
 .log-in-btn__text {
+  padding-left: 28px;
+  background: url(../assets/icon/icon-man.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
   color: rgb(25, 25, 25);
   font-family: "Inter";
   font-size: 14px;

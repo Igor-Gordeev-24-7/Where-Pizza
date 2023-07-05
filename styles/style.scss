@@ -151,10 +151,12 @@ body {
   gap: 8px;
 }
 
-.log-in-btn__img {
-}
-
 .log-in-btn__text {
+  padding-left: 28px;
+  background: url(../assets/icon/icon-man.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
   color: $color-dark;
   font-family: $font-inter;
   font-size: 14px;
