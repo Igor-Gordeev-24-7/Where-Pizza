@@ -161,6 +161,19 @@
   color: rgb(255, 255, 255);
 }
 
+.popup-main {
+  position: absolute;
+  top: 30px;
+}
+
+.popap-main__window {
+  max-height: 285px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
 body {
   background-color: rgb(249, 249, 249);
 }
@@ -309,7 +322,7 @@ body {
   align-items: center;
   gap: 12px;
   padding-left: 44px;
-  margin-right: auto;
+  margin-right: 6%;
   background: url(../assets/icon/icon-logo-pizza.svg);
   background-repeat: no-repeat;
   background-size: contain;
@@ -323,6 +336,92 @@ body {
   line-height: 18px;
   letter-spacing: 0px;
   text-align: right;
+}
+
+.header__bottom-nav {
+  position: relative;
+  margin-right: auto;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.header__menu-link {
+  color: rgb(25, 25, 25);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.header__menu-link--arrow {
+  padding-right: 24px;
+  background: url(../assets/icon/icon-arrow-down.svg);
+  background-repeat: no-repeat;
+  background-size: 16px;
+  background-position: center right;
+}
+
+.header__submenu-box {
+  padding-top: 31px;
+  max-width: 300px;
+  width: 100%;
+  position: absolute;
+  right: -17%;
+  z-index: 100;
+  transform-origin: 0 0;
+  transform: rotateX(-90deg);
+  transition: 0.3s linear;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.header__submenu {
+  position: relative;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 12px;
+  box-shadow: 0px 2px 8px rgba(25, 25, 25, 0.1);
+  z-index: 99;
+}
+
+.header__submenu::after {
+  content: "";
+  width: 16px;
+  height: 8px;
+  position: absolute;
+  top: -7px;
+  left: 142px;
+  background: url(../assets/icon/icon-triangle.svg);
+  background-repeat: no-repeat;
+  background-size: 16px 8px;
+}
+
+.header__menu li:hover > .header__submenu-box {
+  transform: rotateX(0deg);
+  visibility: visible;
+  opacity: 1;
+}
+
+.header__submenu-item {
+  color: rgb(25, 25, 25);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
 }
 
 .header__basket-btn {
