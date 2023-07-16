@@ -75,6 +75,8 @@ $color-grey: rgb(165, 165, 165);
   cursor: pointer;
 }
 
+// filters__form
+
 .filters__form {
   padding: 0px 20px;
   width: 100%;
@@ -131,6 +133,8 @@ $color-grey: rgb(165, 165, 165);
 
 .filters__input:checked + .filters__checkbox {
   background: $color-orange;
+  color: $color-dark;
+  color: $color-light-white;
 }
 
 .filters__checkbox {
@@ -138,11 +142,11 @@ $color-grey: rgb(165, 165, 165);
   display: flex;
   align-items: center;
   padding: 11px 16px;
-  background: rgb(255, 255, 255);
-  border: 1px solid rgb(240, 240, 240);
+  background: $color-light-white;
+  border: 1px solid $color-white-border;
   border-radius: 6px;
   font-family: $font-inter;
-  color: rgb(25, 25, 25);
+  color: $color-dark;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;

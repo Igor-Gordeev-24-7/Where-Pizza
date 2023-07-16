@@ -112,6 +112,8 @@
 
 .filters__input:checked + .filters__checkbox {
   background: rgb(255, 112, 16);
+  color: rgb(25, 25, 25);
+  color: rgb(255, 255, 255);
 }
 
 .filters__checkbox {
