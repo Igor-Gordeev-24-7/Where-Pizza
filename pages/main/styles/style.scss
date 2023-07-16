@@ -12,7 +12,7 @@ $color-red: rgb(226, 53, 53);
 $color-grey: rgb(165, 165, 165);
 
 .popup-filters {
-  // overflow-x: hidden;
+  overflow-x: hidden;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -38,21 +38,26 @@ $color-grey: rgb(165, 165, 165);
 .popup-filters__window {
   max-width: 520px;
   width: 100%;
-  height: 100%;
+  min-height: 100%;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: start;
   background: $color-light-white;
 }
 
-.popup__filters--pizza {
+.popup-filters__window-conteiner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 .filters__header {
   padding: 32px 20px 0px 20px;
   width: 100%;
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: space-between;
 }
 
@@ -70,7 +75,7 @@ $color-grey: rgb(165, 165, 165);
   cursor: pointer;
 }
 
-.filters__body {
+.filters__form {
   padding: 0px 20px;
   width: 100%;
   margin-top: 20px;
@@ -79,7 +84,7 @@ $color-grey: rgb(165, 165, 165);
   align-items: start;
 }
 
-.filters__body-section {
+.filters__form-section {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -87,7 +92,7 @@ $color-grey: rgb(165, 165, 165);
   gap: 12px;
 }
 
-.filters__body-subheading {
+.filters__form-subheading {
   color: $color-grey;
   font-family: $font-inter;
   font-size: 16px;
@@ -97,7 +102,7 @@ $color-grey: rgb(165, 165, 165);
   text-align: left;
 }
 
-.filters__body-items {
+.filters__form-items {
   max-width: 84%;
   width: 100%;
   margin-bottom: 24px;
@@ -107,31 +112,46 @@ $color-grey: rgb(165, 165, 165);
   gap: 8px;
 }
 
-.filters__body-item {
-  cursor: pointer;
-  width: fit-content;
+// filters__form-item
+
+.filters__form-item {
   display: flex;
   align-items: center;
-  justify-content: center;
+}
+
+.filters__label {
+}
+
+.filters__text {
+}
+
+.filters__input {
+  display: none;
+}
+
+.filters__input:checked + .filters__checkbox {
+  background: $color-orange;
+}
+
+.filters__checkbox {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
   padding: 11px 16px;
-  background: $color-light-white;
+  background: rgb(255, 255, 255);
   border: 1px solid rgb(240, 240, 240);
   border-radius: 6px;
+  font-family: $font-inter;
+  color: rgb(25, 25, 25);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: center;
+  transition: 0.3s;
 }
 
-.filters__body-item:last-child {
-  margin-bottom: 0px;
-}
-
-.filters__body-item:active {
-  background-color: $color-orange;
-}
-
-.filters__body-item:active .filters__body-item-text {
-  color: $color-light-white;
-}
-
-.filters__body-item-text {
+.filters__form-item-text {
   color: $color-dark;
   font-family: $font-inter;
   font-size: 14px;
@@ -141,10 +161,16 @@ $color-grey: rgb(165, 165, 165);
   text-align: center;
 }
 
+// filters__footer
+
 .filters__footer {
-  margin-top: auto;
+  position: sticky;
   width: 100%;
-  border-top: 1px solid $color-grey;
+  bottom: 0;
+  right: 0;
+  margin-top: auto;
+  border-top: 1px solid rgb(240, 240, 240);
+  background: $color-light-white;
 }
 
 .filters__footer-btn-box {
@@ -174,21 +200,6 @@ $color-grey: rgb(165, 165, 165);
 .filters__footer-btn--orange {
   background: $color-orange;
   color: $color-light-white;
-}
-
-// popup-main
-
-.popup-main {
-  position: absolute;
-  top: 30px;
-}
-
-.popap-main__window {
-  max-height: 285px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
 }
 
 .popap-main__window-link {
