@@ -883,36 +883,26 @@ body {
 .about-delivery {
   margin-top: 60px;
 }
-
 .about-delivery__wrapper {
   max-width: 850px;
   flex-direction: column;
   align-items: start;
   gap: 16px;
 }
-
 .about-delivery__subheading {
   font-size: 32px;
 }
-
 .about-delivery__shadow-box {
   width: 100%;
   z-index: 100;
   background: linear-gradient(rgba(0, 0, 0, 0.8));
 }
-
 .about-delivery__text-box {
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 20px;
 }
-
-.about-delivery__text-heading {
-  color: black;
-  font-weight: 600;
-}
-
 .about-delivery__text {
   color: rgb(25, 25, 25);
   font-family: "Inter";
@@ -922,7 +912,10 @@ body {
   letter-spacing: 0px;
   text-align: left;
 }
-
+.about-delivery__text-heading {
+  color: black;
+  font-weight: 600;
+}
 .about-delivery__btn {
   color: rgb(25, 25, 25);
   font-family: Inter;
@@ -941,13 +934,11 @@ body {
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(240, 240, 240);
 }
-
 .footer__wrapper {
   height: 100%;
   width: 100%;
   align-items: start;
 }
-
 .footer__column-about {
   height: 100%;
   width: 100%;
@@ -958,7 +949,6 @@ body {
   align-items: start;
   justify-content: space-between;
 }
-
 .footer__column-logo-link {
   height: 40px;
   padding-left: 55px;
@@ -969,7 +959,6 @@ body {
   background-size: contain;
   background-position: left top;
 }
-
 .footer__column-logo-text {
   color: rgb(25, 25, 25);
   font-family: "Inter";
@@ -979,7 +968,6 @@ body {
   letter-spacing: 0px;
   text-align: left;
 }
-
 .footer__copyright {
   color: rgb(25, 25, 25);
   font-family: "Inter";
@@ -989,7 +977,6 @@ body {
   letter-spacing: 0px;
   text-align: left;
 }
-
 .footer__columns {
   height: 100%;
   width: 100%;
@@ -997,14 +984,12 @@ body {
   align-items: start;
   justify-content: space-between;
 }
-
 .footer__column {
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 22px;
 }
-
 .footer__column-heading {
   color: rgb(25, 25, 25);
   font-family: "Inter";
@@ -1014,7 +999,6 @@ body {
   letter-spacing: 0px;
   text-align: left;
 }
-
 .footer__column-links {
   height: 100%;
   display: flex;
@@ -1022,7 +1006,6 @@ body {
   align-items: start;
   gap: 20px;
 }
-
 .footer__column-link {
   color: rgb(25, 25, 25);
   font-family: "Inter";
