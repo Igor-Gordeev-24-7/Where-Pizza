@@ -687,40 +687,31 @@ body {
   width: 100%;
   margin-top: 30px;
 }
-
 .foods__wrapper {
   flex-direction: column;
   align-items: start;
 }
-
 .foods__conteiner {
   width: 100%;
 }
-
 .foods__conteiner--sushi {
   margin-top: 46px;
 }
-
 .foods__conteiner--snacks {
   margin-top: 46px;
 }
-
 .foods__conteiner--dessert {
   margin-top: 46px;
 }
-
+.foods--sauces {
+  margin-top: 46px;
+}
 .foods__conteiner--beverages {
   margin-top: 46px;
 }
-
-.foods__conteiner--sauces {
-  margin-top: 46px;
-}
-
 .foods__conteiner--combo {
   margin-top: 46px;
 }
-
 .foods__header {
   width: 100%;
   position: relative;
@@ -728,8 +719,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-
-.subheading {
+.foods__conteiner-subheading {
   color: rgb(25, 25, 25);
   font-family: "Inter";
   font-size: 40px;
@@ -738,7 +728,6 @@ body {
   letter-spacing: 0px;
   text-align: left;
 }
-
 .foods__header-btn {
   display: flex;
   align-items: center;
@@ -750,7 +739,6 @@ body {
   border: 1px solid rgb(240, 240, 240);
   border-radius: 6px;
 }
-
 .foods__header-btn-span {
   color: rgb(25, 25, 25);
   font-family: "Inter";
@@ -760,7 +748,6 @@ body {
   letter-spacing: 0px;
   text-align: center;
 }
-
 .foods__list {
   width: 100%;
   margin-top: 32px;
@@ -770,8 +757,7 @@ body {
   justify-content: space-between;
   row-gap: 30px;
 }
-
-.food-list__card {
+.foods__card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -779,8 +765,7 @@ body {
   border-radius: 12px;
   background: rgb(255, 255, 255);
 }
-
-.food-list__card--new::after {
+.foods__card--new::after {
   content: "NEW";
   position: absolute;
   width: 65px;
@@ -800,8 +785,7 @@ body {
   letter-spacing: 0px;
   text-align: center;
 }
-
-.food-list__card--hit::after {
+.foods__card--hit::after {
   content: "ХИТ";
   position: absolute;
   width: 65px;
@@ -821,8 +805,7 @@ body {
   letter-spacing: 0px;
   text-align: center;
 }
-
-.food-list__card-img {
+.foods__card-img {
   width: 300px;
   height: 300px;
   -o-object-fit: cover;
@@ -831,8 +814,7 @@ body {
      object-position: center;
   border-bottom: 1px solid rgb(240, 240, 240);
 }
-
-.food-list__card-box {
+.foods__card-box {
   width: 100%;
   height: 100%;
   padding: 16px 20px;
@@ -840,8 +822,7 @@ body {
   flex-direction: column;
   align-items: start;
 }
-
-.food-list__card-name {
+.foods__card-name {
   height: 48px;
   color: rgb(25, 25, 25);
   font-family: "Inter";
@@ -851,8 +832,7 @@ body {
   letter-spacing: 0px;
   text-align: left;
 }
-
-.food-list__card-description {
+.foods__card-description {
   margin-bottom: auto;
   width: 100%;
   max-width: 260px;
@@ -869,16 +849,14 @@ body {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
-
-.food-list__card-btn-box {
+.foods__card-btn-box {
   margin-top: 16px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-.food-list__card-btn {
+.foods__card-btn {
   padding: 13px 32px;
   background: rgb(255, 112, 16);
   border-radius: 6px;
@@ -890,8 +868,7 @@ body {
   letter-spacing: 0px;
   text-align: center;
 }
-
-.food-list__card-price-box {
+.foods__card-price-box {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -903,7 +880,6 @@ body {
   letter-spacing: 0px;
   text-align: right;
 }
-
 .about-delivery {
   margin-top: 60px;
 }
