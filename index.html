@@ -10,21 +10,97 @@
 
 <body>
 
-    <!-- popup-filters -->
+    <!-- popup-card-product -->
 
-    <div class="popup-filters popup-filters--hidden">
+    <div class="popup-card-product ">
 
-        <div class="popup-filters__window">
+        <div class="popup-card-product__window">
 
-            <div class="popup-filters__window-conteiner">
+            <div class="popup-card-product__btn-close">
 
-                <!-- filters__header -->
+                <svg width="32.000000" height="32.000000">
+                    <use xlink:href="./assets/icon/icon-cross-white.svg#icon-cross-white"></use>
+                </svg>
 
-                <div class="filters__header">
+            </div>
 
-                    <h4 class="filters__subheading">Фильтр</h4>
+            <img src="./assets/img/img-pizza-big.png" alt="img-pizza-big" class="popup-card-product__img">
 
-                    <button class="filters__subheading-btn">
+            <div class="popup-card-product__column">
+
+                <div class="popup-card-product__header">
+
+                    <h5 class="popup-card-product__subheading">Пепперони по-деревенски</h5>
+
+                    <button class="popup-card-product__btn-info"></button>
+
+                </div>
+
+                <div class="popup-card-product__body">
+
+                    <div class="popup-card-product__filters">
+
+
+
+                    </div>
+
+                    <div class="popup-card-product__add">
+
+
+
+                    </div>
+
+
+                </div>
+
+                <div class="popup-card-product__footer">
+
+                    <div class="popup-card-product__price-box">
+
+                        <span class="popup-card-product__price">Итого:</span>
+
+                        ₽
+
+                    </div>
+
+                    <div class="popup-card-product__weight-box">
+
+                        <div class="popup-card-product__weight">400</div>
+
+                        г
+
+                    </div>
+
+                    <div class="popup-card-product__btn-add">
+
+                        <span>Добавить</span>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- popup-cart -->
+
+    <div class="popup-cart">
+
+        <div class="popup-cart__window">
+
+            <div class="popup-cart__window-conteiner">
+
+                <!-- cart__header -->
+
+                <div class="popup-cart__header">
+
+                    <h4 class="popup-cart__subheading">Ваш заказ</h4>
+
+                    <button class="popup-cart__btn-close">
 
                         <svg width="24.000000" height="24.000000">
                             <use xlink:href="./assets/icon/icon-cross.svg#icon-cross"></use>
@@ -34,256 +110,157 @@
 
                 </div>
 
-                <!-- filters__body -->
+                <!-- popup-cart__body -->
 
-                <div class="filters__body">
+                <div class="popup-cart__body">
 
-                    <!-- filters__body-section -->
+                    <div class="popup-cart__body-item">
 
-                    <div class="filters__body-section">
+                        <img src="./assets/img/img-pizza-mini.png" alt="popup-cart-item-img"
+                            class="popup-cart__item-img">
 
-                        <h5 class="filters__body-subheading">Общее</h5>
+                        <div class="popup-cart__item-column">
 
-                        <div class="filters__body-items">
+                            <div class="popup-cart__column-top">
 
-                            <btn class="filters__body-item">
+                                <h5 class="popup-cart__name">Чикен Сладкий Чили</h5>
 
-                                <span class="filters__body-item-text">Хит</span>
+                                <span class="popup-cart__description">Традиционное тесто, 23 см</span>
 
-                            </btn>
-                            <btn class="filters__body-item">
+                            </div>
 
-                                <span class="filters__body-item-text">Новинка</span>
+                            <div class="popup-cart__column-bottom">
 
-                            </btn>
-                            <btn class="filters__body-item">
+                                <span class="popup-cart__counter">
 
-                                <span class="filters__body-item-text">С мясом</span>
+                                    <button class="popup-cart__counter-btn">-</button>
 
-                            </btn>
-                            <btn class="filters__body-item">
+                                    <span class="popup-cart__counter-span">1</span>
 
-                                <span class="filters__body-item-text">Вегетарианская</span>
+                                    <button class="popup-cart__counter-btn">+</button>
 
-                            </btn>
-                            <btn class="filters__body-item">
+                                </span>
 
-                                <span class="filters__body-item-text">С курицей</span>
+                                <div class="popup-cart__price-box">
 
-                            </btn>
-                            <btn class="filters__body-item">
+                                    <span class="popup-cart__price">450</span>
 
-                                <span class="filters__body-item-text">Без лука</span>
+                                    ₽
 
-                            </btn>
-                            <btn class="filters__body-item">
+                                </div>
 
-                                <span class="filters__body-item-text">С грибами</span>
-
-                            </btn>
-                            <btn class="filters__body-item">
-
-                                <span class="filters__body-item-text">С морепродуктами</span>
-
-                            </btn>
-                            <btn class="filters__body-item">
-
-                                <span class="filters__body-item-text">Барбекью</span>
-
-                            </btn>
+                            </div>
 
                         </div>
 
                     </div>
 
-                    <!-- filters__body-section -->
+                    <div class="popup-cart__body-item">
 
-                    <div class="filters__body-section">
+                        <img src="./assets/img/img-pizza-mini.png" alt="popup-cart-item-img"
+                            class="popup-cart__item-img">
 
-                        <h5 class="filters__body-subheading">Сыр</h5>
+                        <div class="popup-cart__item-column">
 
-                        <div class="filters__body-items">
+                            <div class="popup-cart__column-top">
 
-                            <btn class="filters__body-item">
+                                <h5 class="popup-cart__name">Чикен Сладкий Чили</h5>
 
-                                <span class="filters__body-item-text">Реджанито</span>
+                                <span class="popup-cart__description">Традиционное тесто, 23 см</span>
 
-                            </btn>
-                            <btn class="filters__body-item">
+                            </div>
 
-                                <span class="filters__body-item-text">Моцарелла</span>
+                            <div class="popup-cart__column-bottom">
 
-                            </btn>
-                            <btn class="filters__body-item">
+                                <span class="popup-cart__counter">
 
-                                <span class="filters__body-item-text">Чеддер</span>
+                                    <button class="popup-cart__counter-btn">-</button>
 
-                            </btn>
-                            <btn class="filters__body-item">
+                                    <span class="popup-cart__counter-span">1</span>
 
-                                <span class="filters__body-item-text">С голубой плесенью</span>
+                                    <button class="popup-cart__counter-btn">+</button>
 
-                            </btn>
-                            <btn class="filters__body-item">
+                                </span>
 
-                                <span class="filters__body-item-text">Смесь итальянских сыров</span>
+                                <div class="popup-cart__price-box">
 
-                            </btn>
-                            <btn class="filters__body-item">
+                                    <span class="popup-cart__price">450</span>
 
-                                <span class="filters__body-item-text">Мягкий молодой сыр</span>
+                                    ₽
 
-                            </btn>
+                                </div>
+
+                            </div>
 
                         </div>
 
                     </div>
 
-                    <!-- filters__body-section -->
+                    <div class="popup-cart__body-item">
 
-                    <div class="filters__body-section">
+                        <img src="./assets/img/img-pizza-mini.png" alt="popup-cart-item-img"
+                            class="popup-cart__item-img">
 
-                        <h5 class="filters__body-subheading">Мясо</h5>
+                        <div class="popup-cart__item-column">
 
-                        <div class="filters__body-items">
+                            <div class="popup-cart__column-top">
 
-                            <btn class="filters__body-item">
+                                <h5 class="popup-cart__name">Чикен Сладкий Чили</h5>
 
-                                <span class="filters__body-item-text">Пепперони</span>
+                                <span class="popup-cart__description">Традиционное тесто, 23 см</span>
 
-                            </btn>
-                            <btn class="filters__body-item">
+                            </div>
 
-                                <span class="filters__body-item-text">Свинина</span>
+                            <div class="popup-cart__column-bottom">
 
-                            </btn>
-                            <btn class="filters__body-item">
+                                <span class="popup-cart__counter">
 
-                                <span class="filters__body-item-text">Бекон</span>
+                                    <button class="popup-cart__counter-btn">-</button>
 
-                            </btn>
-                            <btn class="filters__body-item">
+                                    <span class="popup-cart__counter-span">1</span>
 
-                                <span class="filters__body-item-text">Говядина</span>
+                                    <button class="popup-cart__counter-btn">+</button>
 
-                            </btn>
-                            <btn class="filters__body-item">
+                                </span>
 
-                                <span class="filters__body-item-text">Чоризо</span>
+                                <div class="popup-cart__price-box">
 
-                            </btn>
-                            <btn class="filters__body-item">
+                                    <span class="popup-cart__price">450</span>
 
-                                <span class="filters__body-item-text">Колбаски</span>
+                                    ₽
 
-                            </btn>
-                            <btn class="filters__body-item">
+                                </div>
 
-                                <span class="filters__body-item-text">Куриная грудка</span>
-
-                            </btn>
+                            </div>
 
                         </div>
 
                     </div>
-
-                    <!-- filters__body-section -->
-
-                    <!-- <div class="filters__body-section">
-
-                    <h5 class="filters__body-subheading">Компонент</h5>
-
-                    <div class="filters__body-items">
-
-                        <btn class="filters__body-item">
-
-                            <span class="filters__body-item-text">Креветка</span>
-
-                        </btn>
-                        <btn class="filters__body-item">
-
-                            <span class="filters__body-item-text">Ананасы</span>
-
-                        </btn>
-                        <btn class="filters__body-item">
-
-                            <span class="filters__body-item-text">Шампиньоны</span>
-
-                        </btn>
-                        <btn class="filters__body-item">
-
-                            <span class="filters__body-item-text">Лук</span>
-
-                        </btn>
-                        <btn class="filters__body-item">
-
-                            <span class="filters__body-item-text">С курицей</span>
-
-                        </btn>
-                        <btn class="filters__body-item">
-
-                            <span class="filters__body-item-text">Орегано</span>
-
-                        </btn>
-                        <btn class="filters__body-item">
-
-                            <span class="filters__body-item-text">Зеленый перец</span>
-
-                        </btn>
-                        <btn class="filters__body-item">
-
-                            <span class="filters__body-item-text">Томаты</span>
-
-                        </btn>
-                        <btn class="filters__body-item">
-
-                            <span class="filters__body-item-text">Чеснок</span>
-
-                        </btn>
-                        <btn class="filters__body-item">
-
-                            <span class="filters__body-item-text">Красный перец</span>
-
-                        </btn>
-                        <btn class="filters__body-item">
-
-                            <span class="filters__body-item-text">Оливки</span>
-
-                        </btn>
-                        <btn class="filters__body-item">
-
-                            <span class="filters__body-item-text">Маслины</span>
-
-                        </btn>
-                        <btn class="filters__body-item">
-
-                            <span class="filters__body-item-text">Клубника</span>
-
-                        </btn>
-                        <btn class="filters__body-item">
-
-                            <span class="filters__body-item-text">Смесь итальянских трав</span>
-
-                        </btn>
-
-                    </div>
-
-                </div> -->
 
                 </div>
 
             </div>
 
-            <div class="filters__footer">
+            <!--popup-cart__footer -->
 
-                <div class="filters__footer-btn-box">
+            <div class="popup-cart__footer">
 
-                    <button class="filters__footer-btn filters__footer-btn--white">
-                        <span>Сбросить</span>
-                    </button>
+                <div class="popup-cart__footer-box">
 
-                    <button class="filters__footer-btn filters__footer-btn--orange">
-                        <span>Применить</span>
+                    <div class="popup-cart__footer-price-box">
+
+                        <span class="popup-cart__footer-price-text">Итого:</span>
+
+                        <span class="popup-cart__footer-price">1250</span>
+
+                        ₽
+
+                    </div>
+
+                    <button type="submit" class="popup-cart__btn popup-cart__btn--submit">
+
+                        <span>Оформить заказ</span>
+
                     </button>
 
                 </div>
@@ -293,6 +270,749 @@
         </div>
 
     </div>
+
+    <!-- popup-filters -->
+
+    <form class="popup-filters">
+
+        <div class="popup-filters__window">
+
+            <div class="popup-filters__conteiner">
+
+                <!-- popup-filters__header -->
+
+                <div class="popup-filters__header">
+
+                    <h4 class="popup-filters__subheading">Фильтр</h4>
+
+                    <button class="popup-filters__close">
+
+                        <svg width="24.000000" height="24.000000">
+                            <use xlink:href="./assets/icon/icon-cross.svg#icon-cross"></use>
+                        </svg>
+
+                    </button>
+
+                </div>
+
+                <!-- popup-filters__body -->
+
+                <div class="popup-filters__body">
+
+                    <!-- popup-filters__section -->
+
+                    <div class="popup-filters__section">
+
+                        <h5 class="popup-filters__body-subheading">Общее</h5>
+
+                        <!-- popup-filters__items -->
+
+                        <fieldset class="popup-filters__items popup-filters__items--first">
+
+                            <!-- popup-filters__item -->
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="general-hit">
+
+                                    <input checked required value="general-hit" class="popup-filters__input"
+                                        type="radio" name="additive" id="general-hit">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Хит</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="general-novelty">
+
+                                    <input required value="general-novelty" class="popup-filters__input" type="radio"
+                                        name="additive" id="general-novelty">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Новинка</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="general-with-meat">
+
+                                    <input required value="general-with-meat" class="popup-filters__input" type="radio"
+                                        name="additive" id="general-with-meat">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">С мясом</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="general-vegetarian">
+
+                                    <input required value="general-vegetarian" class="popup-filters__input" type="radio"
+                                        name="additive" id="general-vegetarian">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Вегетарианская</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="general-with-chiken">
+
+                                    <input required value="general-with-chiken" class="popup-filters__input"
+                                        type="radio" name="additive" id="general-with-chiken">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">С курицей</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="general-new">
+
+                                    <input required value="general-new" class="popup-filters__input" type="radio"
+                                        name="additive" id="general-new">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Без лука</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="general-with-mushrooms">
+
+                                    <input required value="general-with-mushrooms" class="popup-filters__input"
+                                        type="radio" name="additive" id="general-with-mushrooms">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">С грибами</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="general-with-seafood">
+
+                                    <input required value="general-with-seafood" class="popup-filters__input"
+                                        type="radio" name="additive" id="general-with-seafood">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">С морепродуктами</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="general-barbecue">
+
+                                    <input required value="general-barbecue" class="popup-filters__input" type="radio"
+                                        name="additive" id="general-barbecue">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Барбекью</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                        </fieldset>
+
+                    </div>
+
+                    <div class="popup-filters__section">
+
+                        <h5 class="popup-filters__body-subheading">Сыр</h5>
+
+                        <!-- popup-filters__items -->
+
+                        <div class="popup-filters__items popup-filters__items--second">
+
+                            <!-- popup-filters__item -->
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="cheese-reggianito">
+
+                                    <input required value="cheese-reggianito" class="popup-filters__input" type="radio"
+                                        name="additive" id="cheese-reggianito">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Реджанито</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="cheese-mozzarella">
+
+                                    <input required value="cheese-mozzarella" class="popup-filters__input" type="radio"
+                                        name="additive" id="cheese-mozzarella">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Моцарелла</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="cheese-cheddar">
+
+                                    <input required value="cheese-cheddar" class="popup-filters__input" type="radio"
+                                        name="additive" id="cheese-cheddar">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Чеддер</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="cheese-with-blue-mold">
+
+                                    <input required value="cheese-with-blue-mold" class="popup-filters__input"
+                                        type="radio" name="additive" id="cheese-with-blue-mold">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">С голубой плесенью</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="cheese-mix-of-italian-cheeses">
+
+                                    <input required value="cheese-mix-of-italian-cheeses" class="popup-filters__input"
+                                        type="radio" name="additive" id="cheese-mix-of-italian-cheeses">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Смесь итальянских сыров</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="cheese-soft-young-cheese">
+
+                                    <input required value="cheese-soft-young-cheese" class="popup-filters__input"
+                                        type="radio" name="additive" id="cheese-soft-young-cheese">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Мягкий молодой сыр</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                        </div>
+
+                    </div>
+
+                    <div class="popup-filters__section">
+
+                        <h5 class="popup-filters__body-subheading">Мясо</h5>
+
+                        <!-- popup-filters__items -->
+
+                        <div class="popup-filters__items popup-filters__items--third">
+
+                            <!-- popup-filters__item -->
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="meat-pepperoni">
+
+                                    <input required value="meat-pepperoni" class="popup-filters__input" type="radio"
+                                        name="additive" id="meat-pepperoni">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Пепперони</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="meat-pork">
+
+                                    <input required value="meat-pork" class="popup-filters__input" type="radio"
+                                        name="additive" id="meat-pork">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Свинина</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="meat-ham">
+
+                                    <input required value="meat-ham" class="popup-filters__input" type="radio"
+                                        name="additive" id="meat-ham">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Ветчина</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="meat-bacon">
+
+                                    <input required value="meat-bacon" class="popup-filters__input" type="radio"
+                                        name="additive" id="meat-bacon">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Бекон</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="meat-beef">
+
+                                    <input required value="meat-beef" class="popup-filters__input" type="radio"
+                                        name="additive" id="meat-beef">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Говядина</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="meat-chorizo">
+
+                                    <input required value="meat-chorizo" class="popup-filters__input" type="radio"
+                                        name="additive" id="meat-chorizo">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Чоризо</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="meat-sausages">
+
+                                    <input required value="meat-sausages" class="popup-filters__input" type="radio"
+                                        name="additive" id="meat-sausages">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Колбаски</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="meat-chicken-breast">
+
+                                    <input required value="meat-chicken-breast" class="popup-filters__input"
+                                        type="radio" name="additive" id="meat-chicken-breast">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Куриная грудка</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                        </div>
+
+                    </div>
+
+                    <div class="popup-filters__section">
+
+                        <h5 class="popup-filters__body-subheading">Компонент</h5>
+
+                        <!-- popup-filters__items -->
+
+                        <div class="popup-filters__items popup-filters__items--fourth">
+
+                            <!-- popup-filters__item -->
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="component-shrimp">
+
+                                    <input required value="component-shrimp" class="popup-filters__input"
+                                        type="checkbox" name="additive" id="component-shrimp">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Креветка</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="component-pineapples">
+
+                                    <input required value="component-pineapples" class="popup-filters__input"
+                                        type="checkbox" name="additive" id="component-pineapples">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Ананасы</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="component-champignon">
+
+                                    <input required value="component-champignon" class="popup-filters__input"
+                                        type="checkbox" name="additive" id="component-champignon">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Шампиньоны</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="component-onion">
+
+                                    <input required value="component-onion" class="popup-filters__input" type="checkbox"
+                                        name="additive" id="component-onion">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Лук</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="component-jalapeno-pepper">
+
+                                    <input required value="component-jalapeno-pepper" class="popup-filters__input"
+                                        type="checkbox" name="additive" id="component-jalapeno-pepper">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Перец халапеньо</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="component-oregano">
+
+                                    <input required value="component-oregano" class="popup-filters__input"
+                                        type="checkbox" name="additive" id="component-oregano">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Орегано</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="component-green-pepper">
+
+                                    <input required value="component-green-pepper" class="popup-filters__input"
+                                        type="checkbox" name="additive" id="component-green-pepper">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Зеленый перец</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="component-tomatoes">
+
+                                    <input required value="component-tomatoes" class="popup-filters__input"
+                                        type="checkbox" name="additive" id="component-tomatoes">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Томаты</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="component-garlic">
+
+                                    <input required value="component-garlic" class="popup-filters__input"
+                                        type="checkbox" name="additive" id="component-garlic">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Чеснок</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="component-red-pepper">
+
+                                    <input required value="component-red-pepper" class="popup-filters__input"
+                                        type="checkbox" name="additive" id="component-red-pepper">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Красный перец</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="component-olives">
+
+                                    <input required value="component-olives" class="popup-filters__input"
+                                        type="checkbox" name="additive" id="component-olives">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Оливки</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="component-black-olives">
+
+                                    <input required value="component-black-olives" class="popup-filters__input"
+                                        type="checkbox" name="additive" id="component-black-olives">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Маслины</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="component-strawberry">
+
+                                    <input required value="component-strawberry" class="popup-filters__input"
+                                        type="checkbox" name="additive" id="component-strawberry">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Клубника</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-filters__item">
+
+                                <label class="popup-filters__label" for="component-italian-herb-blend">
+
+                                    <input required value="component-italian-herb-blend" class="popup-filters__input"
+                                        type="checkbox" name="additive" id="component-italian-herb-blend">
+
+                                    <div class="popup-filters__checkbox">
+
+                                        <span class="popup-filters__text">Смесь итальянских трав</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--popup-filters__footer -->
+
+            <div class="popup-filters__footer">
+
+                <div class="popup-filters__footer-box">
+
+                    <button type="reset" class="popup-filters__btn popup-filters__btn--reset">
+                        <span>Сбросить</span>
+                    </button>
+
+                    <button type="submit" class="popup-filters__btn popup-filters__btn--submit
+                        ">
+                        <span>Применить</span>
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </form>
 
     <!-- HEADER -->
 
@@ -306,25 +1026,26 @@
 
                 <div class="header__top-left-side">
 
-                    <button class="header__location">
+                    <button class="header__top-location">
 
-                        <span class="location__span">Москва</span>
+                        <span class="header__top-location-span">Москва</span>
 
-                        <img src="./assets/icon/icon-arrow-down.svg" alt="icon-arrow-down" class="location__img">
-
-                    </button>
-
-
-                    <button class="header__address-verification">
-
-                        <span class="address-verification__span">Проверить адрес</span>
+                        <img src="./assets/icon/icon-arrow-down.svg" alt="icon-arrow-down"
+                            class="header__top-location-img">
 
                     </button>
 
-                    <div class="timer-box header__timer-box">
 
-                        <span class="timer-box__text">Среднее время доставки*:</span>
-                        <span class="timer-box__timer">00.24.19</span>
+                    <button class="header__top-address">
+
+                        <span class="header__top-address-span">Проверить адрес</span>
+
+                    </button>
+
+                    <div class="header__top-timer-box">
+
+                        <span class="header__top-timer-text">Среднее время доставки*:</span>
+                        <span class="header__top-timer">00.24.19</span>
 
                     </div>
 
@@ -332,16 +1053,16 @@
 
                 <div class="header__top-right-side">
 
-                    <div class="header__info-box">
+                    <div class="header__top-info-box">
 
-                        <span class="info-box__text">Время работы:</span>
-                        <time class="info-box__work-time">с 11:00 до 23:00</time>
+                        <span class="header__top-info-text">Время работы:</span>
+                        <time class="header__top-info-time">с 11:00 до 23:00</time>
 
                     </div>
 
-                    <button class="header__log-in-btn">
+                    <button class="header__top-btn">
 
-                        <span class="log-in-btn__text">Войти в аккаунт</span>
+                        <span class="header__top-btn-text">Войти в аккаунт</span>
 
                     </button>
 
@@ -363,11 +1084,11 @@
 
                 </a>
 
-                <button class="header__basket-btn">
+                <button class="header__card-btn">
 
-                    <div class="basket-btn__price-box">
+                    <div class="header__card-price-box">
 
-                        <span class="basket-btn__price">0</span>
+                        <span class="header__card-price">0</span>
 
                         ₽
 
@@ -2371,7 +3092,7 @@
 
     </footer>
 
-    <script src="./scripts/script-popup-filters.js"></script>
+    <script src="./scripts/script-popups.js"></script>
 
 </body>
 
