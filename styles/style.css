@@ -412,6 +412,7 @@ body {
   margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .header {
@@ -568,61 +569,6 @@ body {
   letter-spacing: 0px;
   text-align: center;
 }
-.header__bottom {
-  width: 100%;
-  height: 64px;
-  display: flex;
-  align-items: center;
-  border-bottom: 1px solid rgb(240, 240, 240);
-}
-
-.header__logo-link {
-  height: 32px;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding-left: 44px;
-  margin-right: auto;
-  background: url(../assets/icon/icon-logo-pizza.svg);
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-
-.header__logo-text {
-  color: rgb(25, 25, 25);
-  font-family: "Inter";
-  font-size: 17px;
-  font-weight: 500;
-  line-height: 18px;
-  letter-spacing: 0px;
-  text-align: right;
-}
-
-.header__basket-btn {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 9px 16px 9px 48px;
-  background: url(../assets/icon/icon-shopping-bag.svg), rgb(255, 112, 16);
-  background-repeat: no-repeat;
-  background-size: 24px 21px;
-  background-position: center left 16px;
-  border-radius: 4px;
-}
-
-.basket-btn__price-box {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  color: rgb(25, 25, 25);
-  font-family: "Inter";
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 22px;
-  letter-spacing: 0px;
-  text-align: center;
-}
-
 .filters__cards {
   margin-top: 30px;
   width: 100%;
@@ -631,7 +577,6 @@ body {
   grid-template-rows: 1fr;
   justify-content: space-between;
 }
-
 .filters__card {
   cursor: pointer;
   padding-top: 20px;
@@ -645,7 +590,6 @@ body {
   border: 1px solid rgb(240, 240, 240);
   border-radius: 10px;
 }
-
 .filters__card-text {
   color: rgb(25, 25, 25);
   font-family: "Inter";
@@ -660,7 +604,6 @@ body {
   margin-top: 30px;
   width: 100%;
 }
-
 .stock__cards {
   width: 100%;
   display: grid;
@@ -670,7 +613,6 @@ body {
        column-gap: 30px;
   justify-content: space-between;
 }
-
 .stock__card {
   width: 100%;
   height: 100%;
@@ -681,14 +623,12 @@ body {
   background-size: 460px 270px;
   background-position: bottom 110px center;
 }
-
 .stock__card:nth-child(even) {
   background: url(../assets/img/stock-card-bg-2.png), rgb(226, 53, 53);
   background-repeat: no-repeat;
   background-size: 280px 115px;
   background-position: bottom 154px left;
 }
-
 .stock__card-text {
   position: absolute;
   bottom: 20px;
@@ -702,20 +642,18 @@ body {
   text-align: left;
 }
 
-.filters__check-address {
+.check-address {
   margin-top: 30px;
   width: 100%;
   display: flex;
   align-items: center;
 }
-
 .check-address__form {
   width: 100%;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(240, 240, 240);
   border-radius: 8px;
 }
-
 .check-address__fieldset {
   padding: 16px 32px;
   width: 100%;
@@ -724,7 +662,6 @@ body {
   height: 80px;
   border-radius: 8px;
 }
-
 .check-address__text {
   margin-right: 32px;
   color: rgb(25, 25, 25);
@@ -735,7 +672,6 @@ body {
   letter-spacing: 0px;
   text-align: left;
 }
-
 .check-address__input-box {
   margin-right: auto;
   width: 100%;
@@ -750,7 +686,6 @@ body {
   border: 1px solid rgb(240, 240, 240);
   border-radius: 6px;
 }
-
 .check-address__input {
   margin-left: 40px;
   width: 90%;
@@ -761,11 +696,9 @@ body {
   line-height: 22px;
   text-align: left;
 }
-
 .check-address__input:focus {
   color: rgb(25, 25, 25);
 }
-
 .check-address__btn {
   padding: 12px 32px;
   background: rgb(255, 112, 16);
@@ -783,40 +716,31 @@ body {
   width: 100%;
   margin-top: 30px;
 }
-
 .foods__wrapper {
   flex-direction: column;
   align-items: start;
 }
-
 .foods__conteiner {
   width: 100%;
 }
-
 .foods__conteiner--sushi {
   margin-top: 46px;
 }
-
 .foods__conteiner--snacks {
   margin-top: 46px;
 }
-
 .foods__conteiner--dessert {
   margin-top: 46px;
 }
-
+.foods--sauces {
+  margin-top: 46px;
+}
 .foods__conteiner--beverages {
   margin-top: 46px;
 }
-
-.foods__conteiner--sauces {
-  margin-top: 46px;
-}
-
 .foods__conteiner--combo {
   margin-top: 46px;
 }
-
 .foods__header {
   width: 100%;
   position: relative;
@@ -824,8 +748,7 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-
-.subheading {
+.foods__conteiner-subheading {
   color: rgb(25, 25, 25);
   font-family: "Inter";
   font-size: 40px;
@@ -834,7 +757,6 @@ body {
   letter-spacing: 0px;
   text-align: left;
 }
-
 .foods__header-btn {
   display: flex;
   align-items: center;
@@ -846,7 +768,6 @@ body {
   border: 1px solid rgb(240, 240, 240);
   border-radius: 6px;
 }
-
 .foods__header-btn-span {
   color: rgb(25, 25, 25);
   font-family: "Inter";
@@ -856,7 +777,6 @@ body {
   letter-spacing: 0px;
   text-align: center;
 }
-
 .foods__list {
   width: 100%;
   margin-top: 32px;
@@ -866,8 +786,7 @@ body {
   justify-content: space-between;
   row-gap: 30px;
 }
-
-.food-list__card {
+.foods__card {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -875,8 +794,7 @@ body {
   border-radius: 12px;
   background: rgb(255, 255, 255);
 }
-
-.food-list__card--new::after {
+.foods__card--new::after {
   content: "NEW";
   position: absolute;
   width: 65px;
@@ -896,8 +814,7 @@ body {
   letter-spacing: 0px;
   text-align: center;
 }
-
-.food-list__card--hit::after {
+.foods__card--hit::after {
   content: "ХИТ";
   position: absolute;
   width: 65px;
@@ -917,8 +834,7 @@ body {
   letter-spacing: 0px;
   text-align: center;
 }
-
-.food-list__card-img {
+.foods__card-img {
   width: 300px;
   height: 300px;
   -o-object-fit: cover;
@@ -927,8 +843,7 @@ body {
      object-position: center;
   border-bottom: 1px solid rgb(240, 240, 240);
 }
-
-.food-list__card-box {
+.foods__card-box {
   width: 100%;
   height: 100%;
   padding: 16px 20px;
@@ -936,8 +851,7 @@ body {
   flex-direction: column;
   align-items: start;
 }
-
-.food-list__card-name {
+.foods__card-name {
   height: 48px;
   color: rgb(25, 25, 25);
   font-family: "Inter";
@@ -947,8 +861,7 @@ body {
   letter-spacing: 0px;
   text-align: left;
 }
-
-.food-list__card-description {
+.foods__card-description {
   margin-bottom: auto;
   width: 100%;
   max-width: 260px;
@@ -965,16 +878,14 @@ body {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
 }
-
-.food-list__card-btn-box {
+.foods__card-btn-box {
   margin-top: 16px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-
-.food-list__card-btn {
+.foods__card-btn {
   padding: 13px 32px;
   background: rgb(255, 112, 16);
   border-radius: 6px;
@@ -986,8 +897,7 @@ body {
   letter-spacing: 0px;
   text-align: center;
 }
-
-.food-list__card-price-box {
+.foods__card-price-box {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -999,40 +909,35 @@ body {
   letter-spacing: 0px;
   text-align: right;
 }
-
 .about-delivery {
   margin-top: 60px;
 }
-
 .about-delivery__wrapper {
   max-width: 850px;
   flex-direction: column;
   align-items: start;
   gap: 16px;
 }
-
 .about-delivery__subheading {
+  color: rgb(25, 25, 25);
+  font-family: "Inter";
   font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: left;
 }
-
 .about-delivery__shadow-box {
   width: 100%;
   z-index: 100;
   background: linear-gradient(rgba(0, 0, 0, 0.8));
 }
-
 .about-delivery__text-box {
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 20px;
 }
-
-.about-delivery__text-heading {
-  color: black;
-  font-weight: 600;
-}
-
 .about-delivery__text {
   color: rgb(25, 25, 25);
   font-family: "Inter";
@@ -1042,7 +947,10 @@ body {
   letter-spacing: 0px;
   text-align: left;
 }
-
+.about-delivery__text-heading {
+  color: black;
+  font-weight: 600;
+}
 .about-delivery__btn {
   color: rgb(25, 25, 25);
   font-family: Inter;
@@ -1055,19 +963,17 @@ body {
 
 .footer {
   width: 100%;
-  height: 100%;
+  height: 262px;
   margin-top: 60px;
   padding: 32px 0px 32px 0px;
   background-color: rgb(255, 255, 255);
   border: 1px solid rgb(240, 240, 240);
 }
-
 .footer__wrapper {
   height: 100%;
   width: 100%;
   align-items: start;
 }
-
 .footer__column-about {
   height: 100%;
   width: 100%;
@@ -1076,8 +982,8 @@ body {
   display: flex;
   flex-direction: column;
   align-items: start;
+  justify-content: space-between;
 }
-
 .footer__column-logo-link {
   height: 40px;
   padding-left: 55px;
@@ -1088,7 +994,6 @@ body {
   background-size: contain;
   background-position: left top;
 }
-
 .footer__column-logo-text {
   color: rgb(25, 25, 25);
   font-family: "Inter";
@@ -1098,7 +1003,6 @@ body {
   letter-spacing: 0px;
   text-align: left;
 }
-
 .footer__copyright {
   color: rgb(25, 25, 25);
   font-family: "Inter";
@@ -1108,7 +1012,6 @@ body {
   letter-spacing: 0px;
   text-align: left;
 }
-
 .footer__columns {
   height: 100%;
   width: 100%;
@@ -1116,14 +1019,12 @@ body {
   align-items: start;
   justify-content: space-between;
 }
-
 .footer__column {
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 22px;
 }
-
 .footer__column-heading {
   color: rgb(25, 25, 25);
   font-family: "Inter";
@@ -1133,7 +1034,6 @@ body {
   letter-spacing: 0px;
   text-align: left;
 }
-
 .footer__column-links {
   height: 100%;
   display: flex;
@@ -1141,7 +1041,6 @@ body {
   align-items: start;
   gap: 20px;
 }
-
 .footer__column-link {
   color: rgb(25, 25, 25);
   font-family: "Inter";
