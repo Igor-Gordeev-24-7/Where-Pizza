@@ -558,6 +558,17 @@ body {
   background-color: $color-white;
 }
 
+// PAGE
+
+.page {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+// WRAPPER
+
 .wrapper {
   width: 100%;
   max-width: 1290px;
@@ -1204,6 +1215,7 @@ body {
 
 .about-delivery {
   margin-top: 60px;
+  margin-bottom: 60px;
 
   &__wrapper {
     max-width: 850px;
@@ -1265,7 +1277,7 @@ body {
 .footer {
   width: 100%;
   height: 262px;
-  margin-top: 60px;
+  margin-top: auto;
   padding: 32px 0px 32px 0px;
   background-color: $color-light-white;
   border: 1px solid $color-white-border;
