@@ -145,3 +145,8 @@ button {
   background: none;
   border: none;
 }
+textarea {
+  outline: none;
+  background: none;
+  border: none;
+}
