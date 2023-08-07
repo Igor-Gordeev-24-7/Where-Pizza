@@ -219,6 +219,111 @@ body {
 .header {
   background-color: rgb(255, 255, 255);
 }
+.header__top {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgb(240, 240, 240);
+}
+.header__top-left-side {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-right: auto;
+}
+.header__top-location {
+  height: 20px;
+  padding-left: 28px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: url(../assets/icon/icon-map-point.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.header__top-location-span {
+  color: rgb(25, 25, 25);
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: right;
+}
+.header__top-address-span {
+  color: rgb(25, 25, 25);
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 0px;
+  text-align: right;
+}
+.header__top-timer-text {
+  color: rgb(25, 25, 25);
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: right;
+}
+.header__top-timer {
+  color: rgb(25, 25, 25);
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: right;
+}
+.header__top-right-side {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header__top-info-box {
+  display: flex;
+  align-items: center;
+}
+.header__top-info-text {
+  color: rgb(25, 25, 25);
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.header__top-info-time {
+  color: rgb(25, 25, 25);
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: right;
+}
+.header__top-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.header__top-btn-text {
+  padding-left: 28px;
+  background: url(../assets/icon/icon-man.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left top;
+  color: rgb(25, 25, 25);
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: right;
+}
 .header__bottom {
   width: 100%;
   height: 64px;
