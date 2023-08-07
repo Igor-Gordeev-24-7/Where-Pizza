@@ -27,22 +27,344 @@
   position: relative;
   width: 1070px;
   height: 680px;
-  padding: 32px 20px 20px 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: rgb(255, 255, 255);
   border-radius: 24px;
 }
+.popup-card-product__new {
+  width: 82px;
+  height: 40px;
+  position: absolute;
+  top: 32px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 5px 5px 0px;
+  background: rgb(226, 53, 53);
+}
+.popup-card-product__new-text {
+  color: rgb(255, 255, 255);
+  font-family: "Inter";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+}
 .popup-card-product__btn-close {
   position: absolute;
   top: 0;
   right: -62px;
 }
+.popup-card-product__columns {
+  width: 100%;
+  display: flex;
+  align-items: start;
+}
+.popup-card-product__column-left {
+  padding: 115px 60px;
+  display: flex;
+  align-items: center;
+}
 .popup-card-product__img {
   width: 450px;
   height: 450px;
 }
+.popup-card-product__column-right {
+  width: 100%;
+  padding: 32px 20px 20px 0px;
+}
+.popup-card-product__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popup-card-product__heading {
+  margin-bottom: 16px;
+  padding-left: 26px;
+  background: url(../assets/icon/icon-fire.svg);
+  background-repeat: no-repeat;
+  background-size: 18px 24px;
+  background-position: top center left;
+  color: rgb(25, 25, 25);
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.popup-card-product__subheading {
+  margin-bottom: 16px;
+  color: rgb(25, 25, 25);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.popup-card-product__btn-info {
+  width: 24px;
+  height: 24px;
+  background: url(../assets/icon/icon-info.svg);
+  background-repeat: no-repeat;
+  background-size: 24px;
+}
+.popup-card-product__container {
+  width: 100%;
+  margin-top: 16px;
+}
+.popup-card-product__additives-box {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+.popup-card-product__additives {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.popup-card-product__additives-input {
+  display: none;
+}
+.popup-card-product__additives-checkbox {
+  width: 105px;
+  height: 105px;
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 12px;
+  transition: 0.3s;
+}
+.popup-card-product__additives-checkbox-first {
+  background: url(../assets/icon/icon-cheese.svg), url(../assets/icon/icon-check-mark.svg), rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: center, top 16px right 16px;
+  background-size: 40px 35px, 0px;
+}
+.popup-card-product__additives-input-first:checked + .popup-card-product__additives-checkbox-first {
+  border: 1px solid rgb(255, 112, 16);
+  background: url(../assets/icon/icon-cheese.svg), url(../assets/icon/icon-check-mark.svg), rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: center, top 8px right 8px;
+  background-size: 40px 35px, 16px;
+}
+.popup-card-product__additives-checkbox-second {
+  background: url(../assets/icon/icon-cucumber.svg), url(../assets/icon/icon-check-mark.svg), rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: center, top 16px right 16px;
+  background-size: 40px 35px, 0px;
+}
+.popup-card-product__additives-input-second:checked + .popup-card-product__additives-checkbox-second {
+  border: 1px solid rgb(255, 112, 16);
+  background: url(../assets/icon/icon-cucumber.svg), url(../assets/icon/icon-check-mark.svg), rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: center, top 8px right 8px;
+  background-size: 40px 35px, 16px;
+}
+.popup-card-product__additives-checkbox-third {
+  background: url(../assets/icon/icon-pepperoni.svg), url(../assets/icon/icon-check-mark.svg), rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: center, top 16px right 16px;
+  background-size: 40px 35px, 0px;
+}
+.popup-card-product__additives-input-third:checked + .popup-card-product__additives-checkbox-third {
+  border: 1px solid rgb(255, 112, 16);
+  background: url(../assets/icon/icon-pepperoni.svg), url(../assets/icon/icon-check-mark.svg), rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: center, top 8px right 8px;
+  background-size: 40px 35px, 16px;
+}
+.popup-card-product__additives-checkbox-fourth {
+  background: url(../assets/icon/icon-gravy-boat.svg), url(../assets/icon/icon-check-mark.svg), rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: center, top 16px right 16px;
+  background-size: 40px 35px, 0px;
+}
+.popup-card-product__additives-input-fourth:checked + .popup-card-product__additives-checkbox-fourth {
+  border: 1px solid rgb(255, 112, 16);
+  background: url(../assets/icon/icon-gravy-boat.svg), url(../assets/icon/icon-check-mark.svg), rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: center, top 8px right 8px;
+  background-size: 40px 35px, 16px;
+}
+.popup-card-product__additives-checkbox-fifth {
+  background: url(../assets/icon/icon-cheese.svg), url(../assets/icon/icon-check-mark.svg), rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: center, top 16px right 16px;
+  background-size: 40px 35px, 0px;
+}
+.popup-card-product__additives-input-fifth:checked + .popup-card-product__additives-checkbox-fifth {
+  border: 1px solid rgb(255, 112, 16);
+  background: url(../assets/icon/icon-cheese.svg), url(../assets/icon/icon-check-mark.svg), rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: center, top 8px right 8px;
+  background-size: 40px 35px, 16px;
+}
+.popup-card-product__additives-checkbox-sixth {
+  background: url(../assets/icon/icon-mushrooms.svg), url(../assets/icon/icon-mushrooms.svg), rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: center, top 16px right 16px;
+  background-size: 40px 35px, 0px;
+}
+.popup-card-product__additives-input-sixth:checked + .popup-card-product__additives-checkbox-sixth {
+  border: 1px solid rgb(255, 112, 16);
+  background: url(../assets/icon/icon-mushrooms.svg), url(../assets/icon/icon-check-mark.svg), rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: center, top 8px right 8px;
+  background-size: 40px 35px, 16px;
+}
+.popup-card-product__additives-checkbox-seventh {
+  background: url(../assets/icon/icon-onion.svg), url(../assets/icon/icon-check-mark.svg), rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: center, top 16px right 16px;
+  background-size: 40px 35px, 0px;
+}
+.popup-card-product__additives-input-seventh:checked + .popup-card-product__additives-checkbox-seventh {
+  border: 1px solid rgb(255, 112, 16);
+  background: url(../assets/icon/icon-onion.svg), url(../assets/icon/icon-check-mark.svg), rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: center, top 8px right 8px;
+  background-size: 40px 35px, 16px;
+}
+.popup-card-product__additives-checkbox-eighth {
+  background: url(../assets/icon/icon-pepper.svg), url(../assets/icon/icon-check-mark.svg), rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: center, top 16px right 16px;
+  background-size: 40px 35px, 0px;
+}
+.popup-card-product__additives-input-eighth:checked + .popup-card-product__additives-checkbox-eighth {
+  border: 1px solid rgb(255, 112, 16);
+  background: url(../assets/icon/icon-pepper.svg), url(../assets/icon/icon-check-mark.svg), rgb(255, 255, 255);
+  background-repeat: no-repeat;
+  background-position: center, top 8px right 8px;
+  background-size: 40px 35px, 16px;
+}
+.popup-card-product__text {
+  margin-top: 8px;
+  max-width: 103px;
+  max-height: 36px;
+  color: rgb(25, 25, 25);
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.popup-card-product__types {
+  width: 100%;
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 6px;
+}
+.popup-card-product__types-item {
+  width: 50%;
+}
+.popup-card-product__types-input {
+  display: none;
+}
+.popup-card-product__types-checkbox {
+  width: 100%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  background: inherit;
+  border-radius: 6px;
+  transition: 0.3s;
+  color: rgb(25, 25, 25);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.popup-card-product__types-input:checked + .popup-card-product__types-checkbox {
+  background: rgb(255, 112, 16);
+  color: rgb(255, 255, 255);
+}
+.popup-card-product__size {
+  width: 100%;
+  margin-top: 16px;
+  margin-bottom: 24px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 6px;
+}
+.popup-card-product__size-item {
+  width: 100%;
+}
+.popup-card-product__size-input {
+  display: none;
+}
+.popup-card-product__size-checkbox {
+  width: 100%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  background: rgb(255, 255, 255);
+  background-size: 100%;
+  border-radius: 6px;
+  transition: 0.3s;
+  color: rgb(25, 25, 25);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.popup-card-product__size-input:checked + .popup-card-product__size-checkbox {
+  background: rgb(255, 112, 16);
+  color: rgb(255, 255, 255);
+}
+.popup-card-product__bottom {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+}
+.popup-card-product__bottom-box {
+  margin-right: 12px;
+  color: rgb(255, 112, 16);
+  font-family: "Inter";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.popup-card-product__bottom-weight-box {
+  margin-right: auto;
+  color: rgb(165, 165, 165);
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.popup-card-product__bottom-btn {
+  padding: 13px 40px;
+  background: rgb(255, 112, 16);
+  border-radius: 6px;
+  color: rgb(255, 255, 255);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
 .popup-cart {
   visibility: hidden;
   opacity: 0;

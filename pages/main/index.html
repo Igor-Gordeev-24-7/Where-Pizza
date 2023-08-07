@@ -12,9 +12,15 @@
 
     <!-- popup-card-product -->
 
-    <div class="popup-card-product ">
+    <div class="popup-card-product popup-card-product__active">
 
         <div class="popup-card-product__window">
+
+            <div class="popup-card-product__new">
+
+                <span class="popup-card-product__new-text">NEW</span>
+
+            </div>
 
             <div class="popup-card-product__btn-close">
 
@@ -24,61 +30,313 @@
 
             </div>
 
-            <img src="./assets/img/img-pizza-big.png" alt="img-pizza-big" class="popup-card-product__img">
+            <div class="popup-card-product__columns">
 
-            <div class="popup-card-product__column">
+                <!-- popup-card-product__column-left -->
 
-                <div class="popup-card-product__header">
+                <div class="popup-card-product__column-left">
 
-                    <h5 class="popup-card-product__subheading">Пепперони по-деревенски</h5>
-
-                    <button class="popup-card-product__btn-info"></button>
+                    <img src="./assets/img/img-pizza-big.png" alt="img-pizza-big" class="popup-card-product__img">
 
                 </div>
 
-                <div class="popup-card-product__body">
+                <!-- popup-card-product__column-right -->
 
-                    <div class="popup-card-product__filters">
+                <form class="popup-card-product__column-right">
 
+                    <fieldset class="popup-card-product__container">
 
+                        <div class="popup-card-product__top">
 
-                    </div>
+                            <h1 class="popup-card-product__heading">Пепперони по-деревенски</h1>
 
-                    <div class="popup-card-product__add">
+                            <button class="popup-card-product__btn-info">
+                            </button>
 
+                        </div>
 
+                        <!-- popup-card-product__additives-box -->
 
-                    </div>
+                        <fieldset class="popup-card-product__additives-box">
 
+                            <fieldset class="popup-card-product__additives">
 
-                </div>
+                                <label for="additives-mozzarella" class="popup-card-product__additives-lable">
 
-                <div class="popup-card-product__footer">
+                                    <input checked required id="additives-mozzarella" name="additives-pepperoni-top"
+                                        type="radio"
+                                        class="popup-card-product__additives-input popup-card-product__additives-input-first">
 
-                    <div class="popup-card-product__price-box">
+                                    <div
+                                        class="popup-card-product__additives-checkbox popup-card-product__additives-checkbox-first">
+                                    </div>
 
-                        <span class="popup-card-product__price">Итого:</span>
+                                </label>
 
-                        ₽
+                                <span class="popup-card-product__text">Моцарелла</span>
 
-                    </div>
+                            </fieldset>
 
-                    <div class="popup-card-product__weight-box">
+                            <fieldset class="popup-card-product__additives">
 
-                        <div class="popup-card-product__weight">400</div>
+                                <label for="additives-cucumbers-marinated" class="popup-card-product__additives-lable">
 
-                        г
+                                    <input required id="additives-cucumbers-marinated" name="additives-pepperoni-top"
+                                        type="radio"
+                                        class="popup-card-product__additives-input popup-card-product__additives-input-second">
 
-                    </div>
+                                    <div
+                                        class="popup-card-product__additives-checkbox popup-card-product__additives-checkbox-second">
+                                    </div>
 
-                    <div class="popup-card-product__btn-add">
+                                </label>
 
-                        <span>Добавить</span>
+                                <span class="popup-card-product__text">Огурцы
+                                    маринованные</span>
 
-                    </div>
+                            </fieldset>
 
-                </div>
+                            <fieldset class="popup-card-product__additives">
 
+                                <label for="additives-pepperoni" class="popup-card-product__additives-lable">
+
+                                    <input required id="additives-pepperoni" name="additives-pepperoni-top" type="radio"
+                                        class="popup-card-product__additives-input popup-card-product__additives-input-third">
+
+                                    <div class="popup-card-product__additives-checkbox 
+                                        popup-card-product__additives-checkbox-third">
+                                    </div>
+
+                                </label>
+
+                                <span class="popup-card-product__text">Пепперони</span>
+
+                            </fieldset>
+
+                            <fieldset class="popup-card-product__additives">
+
+                                <label for="additives-tomato-sauce" class="popup-card-product__additives-lable">
+
+                                    <input required id="additives-tomato-sauce" name="additives-pepperoni-top"
+                                        type="radio"
+                                        class="popup-card-product__additives-input popup-card-product__additives-input-fourth">
+
+                                    <div
+                                        class="popup-card-product__additives-checkbox popup-card-product__additives-checkbox-fourth">
+                                    </div>
+
+                                </label>
+
+                                <span class="popup-card-product__text">Томатный соус</span>
+
+                            </fieldset>
+
+                        </fieldset>
+
+                        <!-- popup-card-product__types -->
+
+                        <fieldset class="popup-card-product__types">
+
+                            <fieldset class="popup-card-product__types-item">
+
+                                <label for="type-of-test-traditional" class="popup-card-product__types-lable">
+
+                                    <input checked required id="type-of-test-traditional" name="type-of-test"
+                                        type="radio" class="popup-card-product__types-input">
+
+                                    <div class="popup-card-product__types-checkbox">
+
+                                        <span class="popup-card-product__types-text">Традиционное</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-card-product__types-item">
+
+                                <label for="type-of-test-thin" class="popup-card-product__types-lable">
+
+                                    <input required id="type-of-test-thin" name="type-of-test" type="radio"
+                                        class="popup-card-product__types-input">
+
+                                    <div class="popup-card-product__types-checkbox">
+
+                                        <span class="popup-card-product__types-text">Традиционное</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                        </fieldset>
+
+                        <!-- popup-card-product__size -->
+
+                        <fieldset class="popup-card-product__size">
+
+                            <fieldset class="popup-card-product__size-item">
+
+                                <label for="type-of-size-20-centimeters" class="popup-card-product__size-lable">
+
+                                    <input checked required id="type-of-size-20-centimeters" name="type-of-size"
+                                        type="radio" class="popup-card-product__size-input">
+
+                                    <div class="popup-card-product__size-checkbox">
+
+                                        <span class="popup-card-product__size-text">20 см</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-card-product__size-item">
+
+                                <label for="type-of-test-28-centimeters" class="popup-card-product__size-lable">
+
+                                    <input required id="type-of-test-28-centimeters" name="type-of-size" type="radio"
+                                        class="popup-card-product__size-input">
+
+                                    <div class="popup-card-product__size-checkbox">
+
+                                        <span class="popup-card-product__size-text">28 см</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                            <fieldset class="popup-card-product__size-item">
+
+                                <label for="type-of-size-33-centimeters" class="popup-card-product__size-lable">
+
+                                    <input required id="type-of-size-33-centimeters" name="type-of-size" type="radio"
+                                        class="popup-card-product__size-input">
+
+                                    <div class="popup-card-product__size-checkbox">
+
+                                        <span class="popup-card-product__size-text">33 см</span>
+
+                                    </div>
+
+                                </label>
+
+                            </fieldset>
+
+                        </fieldset>
+
+                        <!-- popup-card-product__additives-box -->
+
+                        <h2 class="popup-card-product__subheading">Добавьте в пиццу</h2>
+
+                        <fieldset class="popup-card-product__additives-box">
+
+                            <fieldset class="popup-card-product__additives">
+
+                                <label for="pizza-toppings-mozzarella" class="popup-card-product__additives-lable">
+
+                                    <input checked required id="pizza-toppings-mozzarella" name="pizza-toppings"
+                                        type="radio"
+                                        class="popup-card-product__additives-input popup-card-product__additives-input-fifth">
+
+                                    <div
+                                        class="popup-card-product__additives-checkbox popup-card-product__additives-checkbox-fifth">
+                                    </div>
+
+                                </label>
+
+                                <span class="popup-card-product__text">Моцарелла</span>
+
+                            </fieldset>
+
+                            <fieldset class="popup-card-product__additives">
+
+                                <label for="pizza-toppings-champignon" class="popup-card-product__additives-lable">
+
+                                    <input checked required id="pizza-toppings-champignon" name="pizza-toppings"
+                                        type="radio"
+                                        class="popup-card-product__additives-input popup-card-product__additives-input-sixth">
+
+                                    <div
+                                        class="popup-card-product__additives-checkbox popup-card-product__additives-checkbox-sixth">
+                                    </div>
+
+                                </label>
+
+                                <span class="popup-card-product__text">Шампиньоны</span>
+
+                            </fieldset>
+
+                            <fieldset class="popup-card-product__additives">
+
+                                <label for="pizza-toppings-red-onion" class="popup-card-product__additives-lable">
+
+                                    <input checked required id="pizza-toppings-red-onion" name="pizza-toppings"
+                                        type="radio"
+                                        class="popup-card-product__additives-input popup-card-product__additives-input-seventh">
+
+                                    <div
+                                        class="popup-card-product__additives-checkbox popup-card-product__additives-checkbox-seventh">
+                                    </div>
+
+                                </label>
+
+                                <span class="popup-card-product__text">Красный лук</span>
+
+                            </fieldset>
+
+                            <fieldset class="popup-card-product__additives">
+
+                                <label for="pizza-toppings-bell-pepper" class="popup-card-product__additives-lable">
+
+                                    <input checked required id="pizza-toppings-bell-pepper" name="pizza-toppings"
+                                        type="radio"
+                                        class="popup-card-product__additives-input popup-card-product__additives-input-eighth">
+
+                                    <div
+                                        class="popup-card-product__additives-checkbox popup-card-product__additives-checkbox-eighth">
+                                    </div>
+
+                                </label>
+
+                                <span class="popup-card-product__text">Сладкий перец</span>
+
+                            </fieldset>
+
+                        </fieldset>
+
+                        <fieldset class="popup-card-product__bottom">
+
+                            <div class="popup-card-product__bottom-box">
+
+                                <span class="popup-card-product__text">Итого:</span>
+
+                                <span class="popup-card-product__final-price">379</span>
+
+                                ₽
+
+                            </div>
+
+                            <div class="popup-card-product__bottom-weight-box">
+
+                                <span class="popup-card-product__bottom-weight">400</span>
+
+                                г
+
+                            </div>
+
+                            <button class="popup-card-product__bottom-btn">Добавить</button>
+
+                        </fieldset>
+
+                    </fieldset>
+
+                </form>
 
             </div>
 
