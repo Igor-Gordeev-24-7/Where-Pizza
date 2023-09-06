@@ -1,6 +1,380 @@
 @charset "UTF-8";
 @import url(./fonts.css);
 @import url(./resets.css);
+.popup-authorization-first {
+  visibility: hidden;
+  opacity: 0;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(25, 25, 25, 0.4);
+  -webkit-backdrop-filter: blur(32px);
+          backdrop-filter: blur(32px);
+  z-index: 1000;
+  transition: 0.33s;
+}
+.popup-authorization-first__active {
+  visibility: visible;
+  opacity: 1;
+}
+.popup-authorization-first__window {
+  padding: 60px 0px 60px 0px;
+  position: relative;
+  width: 850px;
+  min-height: 364px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgb(255, 255, 255);
+  border-radius: 24px;
+}
+.popup-authorization-first__btn-close {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: -60px;
+}
+.popup-authorization-first__header {
+  color: rgb(25, 25, 25);
+  font-family: "Inter";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.popup-authorization-first__span {
+  max-width: 380px;
+  margin-top: 16px;
+  color: rgb(25, 25, 25);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.popup-authorization-first__form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.popup-authorization-first__input-box {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.popup-authorization-first__label {
+  color: rgb(165, 165, 165);
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.popup-authorization-first__input {
+  width: 100%;
+  height: 48px;
+  margin-top: 8px;
+  padding: 13px 0px 13px 16px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 6px;
+  color: rgb(165, 165, 165);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.popup-authorization-first__input:focus {
+  color: rgb(25, 25, 25);
+}
+.popup-authorization-first__btn {
+  width: 320px;
+  margin-top: 29px;
+  padding: 13px 136px;
+  background: rgb(255, 112, 16);
+  border-radius: 6px;
+  color: rgb(255, 255, 255);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.popup-authorization-first__description {
+  max-width: 320px;
+  margin-top: 12px;
+  color: rgb(165, 165, 165);
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.popup-authorization-second {
+  visibility: hidden;
+  opacity: 0;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(25, 25, 25, 0.4);
+  -webkit-backdrop-filter: blur(32px);
+          backdrop-filter: blur(32px);
+  z-index: 1000;
+  transition: 0.33s;
+}
+.popup-authorization-second__active {
+  visibility: visible;
+  opacity: 1;
+}
+.popup-authorization-second__window {
+  width: 850px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 60px 0px 60px 0px;
+  background: rgb(249, 249, 249);
+  border-radius: 24px;
+}
+.popup-authorization-second__btn-close {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: -60px;
+}
+.popup-authorization-second__header {
+  margin-bottom: 16px;
+  color: rgb(25, 25, 25);
+  font-family: "Inter";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.popup-authorization-second__number-box {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: rgb(25, 25, 25);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.popup-authorization-second__fieldset {
+  min-width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popup-authorization-second__input {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 6px;
+  color: rgb(165, 165, 165);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.popup-authorization-second__input:focus {
+  color: rgb(25, 25, 25);
+}
+.popup-authorization-second__button-login {
+  width: 240px;
+  padding: 13px 0px 13px 0px;
+  background: rgb(255, 112, 16);
+  border-radius: 6px;
+  color: rgb(255, 255, 255);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.popup-authorization-second__timer-box {
+  margin-top: 12px;
+}
+.popup-authorization-second__timer-span {
+  color: rgb(25, 25, 25);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.popup-authorization-second__timer-value {
+  color: rgb(165, 165, 165);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.popup-authorization-second__timer-value-span {
+  color: rgb(165, 165, 165);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.popup-authorization-third {
+  visibility: hidden;
+  opacity: 0;
+  overflow-x: hidden;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(25, 25, 25, 0.4);
+  -webkit-backdrop-filter: blur(32px);
+          backdrop-filter: blur(32px);
+  z-index: 1000;
+  transition: 0.33s;
+}
+.popup-authorization-third__active {
+  visibility: visible;
+  opacity: 1;
+}
+.popup-authorization-third__window {
+  width: 850px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding: 60px 0px 60px 0px;
+  background: rgb(249, 249, 249);
+  border-radius: 24px;
+}
+.popup-authorization-third__btn-close {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: -60px;
+}
+.popup-authorization-third__header {
+  margin-bottom: 16px;
+  color: rgb(25, 25, 25);
+  font-family: "Inter";
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 40px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.popup-authorization-third__number-box {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: rgb(25, 25, 25);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.popup-authorization-third__fieldset {
+  min-width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.popup-authorization-third__input {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 16px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(240, 240, 240);
+  border-radius: 6px;
+  color: rgb(165, 165, 165);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.popup-authorization-third__input:focus {
+  color: rgb(25, 25, 25);
+}
+.popup-authorization-third__button-login {
+  width: 240px;
+  padding: 13px 0px 13px 0px;
+  background: rgb(255, 112, 16);
+  border-radius: 6px;
+  color: rgb(255, 255, 255);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.popup-authorization-third__timer-box {
+  margin-top: 12px;
+}
+.popup-authorization-third__timer-span {
+  color: rgb(25, 25, 25);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.popup-authorization-third__timer-btn {
+  color: rgb(255, 112, 16);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
 .popup-card-product {
   visibility: hidden;
   opacity: 0;
