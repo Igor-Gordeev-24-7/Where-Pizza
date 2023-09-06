@@ -1607,10 +1607,23 @@ body {
   background: linear-gradient(rgba(0, 0, 0, 0.8));
 }
 .about-delivery__text-box {
+  overflow: hidden;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: start;
   gap: 20px;
+}
+.about-delivery__text-box::after {
+  content: "";
+  text-align: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 23em;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(249, 249, 249));
+  pointer-events: none;
 }
 .about-delivery__text {
   color: rgb(25, 25, 25);
@@ -1626,8 +1639,9 @@ body {
   font-weight: 600;
 }
 .about-delivery__btn {
-  color: rgb(25, 25, 25);
-  font-family: Inter;
+  margin-bottom: 60px;
+  color: rgb(255, 112, 16);
+  font-family: "Inter";
   font-size: 16px;
   font-weight: 600;
   line-height: 20px;
