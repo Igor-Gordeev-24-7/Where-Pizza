@@ -356,93 +356,133 @@
 
         </header>
 
-        
+        <div class="main">
 
-        <!-- FOOTER -->
+            <div class="wrapper main__wrapper">
 
-        <footer class="footer">
+                <div class="main__top">
 
-            <div class="wrapper footer__wrapper">
+                    <h1 class="main__heading">Мой аккаунт</h1>
 
-                <div class="footer__column-about">
+                    <fieldset class="main__top-fieldset">
 
-                    <a href="#" class="footer__column-logo-link">
+                        <fieldset class="main__top-fieldset-item">
 
-                        <span class="footer__column-logo-text">Куда пицца</span>
+                            <label for="account-history-of-orders" class="main__top-fieldset-label">
 
-                    </a>
+                                <input checked required id="account-history-of-orders" type="radio"
+                                    name="account-selection" class="main__top-input">
 
-                    <p class="footer__copyright">© Copyright 2021 — Куда Пицца</p>
+                                <div class="main__top-checkbox">
+
+                                    <span class="main__top-text">История заказов</span>
+
+                                </div>
+
+                            </label>
+
+                        </fieldset>
+
+                        <fieldset class="main__top-fieldset-item">
+
+                            <label for="account-setting" class="main__top-fieldset-label">
+
+                                <input required id="account-setting" type="radio" name="account-selection"
+                                    class="main__top-input">
+
+                                <div class="main__top-checkbox">
+
+                                    <span class="main__top-text">Настройки</span>
+
+                                </div>
+
+                            </label>
+
+                        </fieldset>
+
+                    </fieldset>
 
                 </div>
 
-                <div class="footer__columns">
+                <div class="main__middle">
 
-                    <div class="footer__column">
+                    <div class="main__orders">
 
-                        <h3 class="footer__column-heading">Куда пицца</h3>
+                        <div class="main__order">
 
-                        <div class="footer__column-links">
+                            <div class="main__order-top main__order-top--processed">
 
-                            <a href="#" class="footer__column-link">О компании</a>
+                                <div class="main__order-about">
 
-                            <a href="#" class="footer__column-link">Пользовательское соглашение</a>
+                                    <div class="main__order-about-content">
 
-                            <a href="#" class="footer__column-link">Условия гарантии</a>
+                                        <span class="main__order-about-span">Заказ</span>
 
-                        </div>
+                                        <div class="main__order-about-box">
 
-                    </div>
+                                            №
 
-                    <div class="footer__column">
+                                            <span class="main__order-about-number main__order-about-value">130312</span>
 
-                        <h3 class="footer__column-heading">Помощь</h3>
+                                            <span class="main__order-about-date">22.06.21</span>
 
-                        <div class="footer__column-links">
+                                        </div>
 
-                            <a href="#" class="footer__column-link">Ресторан</a>
+                                    </div>
 
-                            <a href="#" class="footer__column-link">Контакты</a>
+                                </div>
 
-                            <a href="#" class="footer__column-link">Поддержка</a>
+                                <div class="main__order-about">
 
-                            <a href="#" class="footer__column-link">Отследить заказ</a>
+                                    <div class="main__order-about-content">
 
-                        </div>
+                                        <span class="main__order-about-span">Статус заказа</span>
 
-                    </div>
+                                        <div class="main__order-about-box">
 
-                    <div class="footer__column">
+                                            <span class="main__order-about-price">399</span>
 
-                        <h3 class="footer__column-heading">Контакты</h3>
+                                            ₽
 
-                        <div class="footer__column-links">
+                                        </div>
 
-                            <a href="#" class="footer__column-link">
+                                    </div>
 
-                                <span class="footer__column-text">+7 (926) 223-10-11</span>
+                                </div>
 
-                            </a>
+                                <div class="main__order-about">
 
-                            <a href="#" class="footer__column-link">
+                                    <div class="main__order-about-content">
 
-                                <span class="footer__column-text">Москва, ул. Юных Ленинцев, д.99</span>
+                                        <span class="main__order-about-span">Сумма заказа</span>
 
-                            </a>
+                                        <div class="main__order-about-box">
 
-                            <div class="footer__column-link-box">
+                                            <span class="main__order-about-status">Обрабатывается</span>
 
-                                <a href="#" class="footer__column-link">
+                                        </div>
 
-                                    <span class="footer__column-text">Facebok</span>
+                                    </div>
 
-                                </a>
+                                </div>
 
-                                <a href="#" class="footer__column-link">
+                                <div class="main__order-about">
 
-                                    <span class="footer__column-text">Instagram</span>
+                                    <div class="main__order-about-content">
 
-                                </a>
+                                        <span class="main__order-about-span">Оплачено</span>
+
+                                        <div class="main__order-about-box">
+
+                                            <span class="main__order-about-payment">Картой</span>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <button class="main__order-about-btn"></button>
 
                             </div>
 
@@ -454,7 +494,109 @@
 
             </div>
 
-        </footer>
+        </div>
+
+    </div>
+
+    </div>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="wrapper footer__wrapper">
+
+            <div class="footer__column-about">
+
+                <a href="#" class="footer__column-logo-link">
+
+                    <span class="footer__column-logo-text">Куда пицца</span>
+
+                </a>
+
+                <p class="footer__copyright">© Copyright 2021 — Куда Пицца</p>
+
+            </div>
+
+            <div class="footer__columns">
+
+                <div class="footer__column">
+
+                    <h3 class="footer__column-heading">Куда пицца</h3>
+
+                    <div class="footer__column-links">
+
+                        <a href="#" class="footer__column-link">О компании</a>
+
+                        <a href="#" class="footer__column-link">Пользовательское соглашение</a>
+
+                        <a href="#" class="footer__column-link">Условия гарантии</a>
+
+                    </div>
+
+                </div>
+
+                <div class="footer__column">
+
+                    <h3 class="footer__column-heading">Помощь</h3>
+
+                    <div class="footer__column-links">
+
+                        <a href="#" class="footer__column-link">Ресторан</a>
+
+                        <a href="#" class="footer__column-link">Контакты</a>
+
+                        <a href="#" class="footer__column-link">Поддержка</a>
+
+                        <a href="#" class="footer__column-link">Отследить заказ</a>
+
+                    </div>
+
+                </div>
+
+                <div class="footer__column">
+
+                    <h3 class="footer__column-heading">Контакты</h3>
+
+                    <div class="footer__column-links">
+
+                        <a href="#" class="footer__column-link">
+
+                            <span class="footer__column-text">+7 (926) 223-10-11</span>
+
+                        </a>
+
+                        <a href="#" class="footer__column-link">
+
+                            <span class="footer__column-text">Москва, ул. Юных Ленинцев, д.99</span>
+
+                        </a>
+
+                        <div class="footer__column-link-box">
+
+                            <a href="#" class="footer__column-link">
+
+                                <span class="footer__column-text">Facebok</span>
+
+                            </a>
+
+                            <a href="#" class="footer__column-link">
+
+                                <span class="footer__column-text">Instagram</span>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
 
     </div>
 
